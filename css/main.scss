@@ -1,0 +1,49 @@
+/*---------------------------------Imports--------------------------------*/
+/*------------------------------------------------------------------------*/
+@import "./mixins";
+@import "./header";
+@import "./content";
+@import "./footer";
+
+/*------------------------------General fixes-----------------------------*/
+/*------------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*---------------------------useful layout items-------------------------*/
+/*-----------------------------------------------------------------------*/
+.row {
+    display: flex;
+    //border: $buildBorder;
+
+    @include largeMobile {
+        @include rowStack;
+    }
+}
+
+.col {
+    flex: 1;
+    //border: $buildBorder;
+}
+
+.col3 {
+    flex: 0 0 33.3%;
+    //border: $buildBorder;
+}
+
+.col4 {
+    flex: 0 0 25%;
+    //border: $buildBorder;
+}
+
+.col4-2 {
+    flex: 0 0 25%;
+    //border: $buildBorder;
+}

@@ -1,0 +1,486 @@
+//info section------------------------------------------------------
+.info-section {
+    padding: 0 0 80px 0;
+    position: relative;
+
+    @include largeMobile {
+        padding: 0 0 50px 0;
+    }
+
+    .info-bg-img {
+        z-index: -1;
+        overflow: hidden;
+        width: 60%;
+        position: absolute;
+        top: 240px;
+        left: -320px;
+
+        @include largeMobile {
+            top: -280px;
+            left: 240px;
+            width: 80%;
+        }
+
+        @include large {
+            width: 50%;
+            top: 300px;
+            left: -420px;
+        }
+    }
+
+    .main-container {
+        @include mainContainer;
+
+        @include largeMobile {
+            @include mobileContainer2;
+        }
+
+        .row {
+
+            .col {
+                
+                .main-h2 {
+                    font-family: $mainFont;
+                    font-size: 28px;
+                    color: $navFont;
+                    letter-spacing: -1px;
+                    max-width: 80%;
+                    //border: $buildBorder;
+
+                    @include largeTablet {
+                        font-size: 25px;
+                    }
+
+                    @include largeMobile {
+                        min-width: 100%;
+                        text-align: center;
+                        font-size: 30px;
+                        line-height: 44px;
+                        padding: 0 20px 0 20px;
+                    }
+
+                    @include large {
+                        font-size: 35px;
+                        letter-spacing: -1.5px;
+                    }
+                }
+
+                .main-p {
+                    font-family: $mainFont;
+                    font-size: 12px;
+                    color: $mainPFont;
+                    font-weight: $reg;
+                    letter-spacing: 0px;
+                    line-height: 20px;
+                    max-width: 65%;
+                    //border: $buildBorder;
+
+                    @include laptop {
+                        font-size: 12px;
+                    }
+
+                    @include largeTablet {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @include largeMobile {
+                        margin: $centerContainer;
+                        min-width: 100%;
+                        padding: 10px 8px 0 8px;
+                        font-size: 14px;
+                        line-height: 25px;
+                        text-align: center;
+                        padding: 0 20px 0 20px;
+                        margin-bottom: 50px;
+                    }
+
+                    @include large {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .col {
+
+                .number-label {
+                    display: inline-block;
+                    font-family: $mainFont;
+                    font-size: 11px;
+                    font-weight: $extraBold;
+                    color: hsl(100 100% 100%);
+                    padding: 6px 14px 6px 14px;
+                    max-width: 11%;
+                    border-radius: 15px;
+                    text-align: center;
+                    background-color: $mainBtnColor; 
+                    margin-right: 14px;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        padding: 9px 43px 9px 22px;
+                        border-radius: 20px;
+                        font-size: 16px;
+                        text-align: center;
+                        max-width: 0;
+                        margin-right: 0; //possib
+                    }
+
+                    @include fold {
+                        padding: 7px 35px 7px 18px;
+                        font-size: 12px;
+                    }
+                }
+
+                .main-h5 {
+                    display: inline-block;
+                    font-family: $mainFont;
+                    font-size: 12px;
+                    color: $navFont;
+                    font-weight: $boldest;
+                    letter-spacing: -0.5px;
+                    max-width: 50%;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        font-size: 18px;
+                        background-color: hsl(13, 100%, 96%);
+                        min-width: 85%;
+                        padding: 8px 0 8px 0;
+                    }
+
+                    @include mobile {
+                        min-width: 80%;
+                        padding: 10px 0 9px 14px;
+                        font-size: 16px;
+                        background-color: hsl(13, 100%, 96%);
+                        margin-bottom: 10px;
+                    }
+
+                    @include fold {
+                        min-width: 77.5%;
+                        font-size: 12px;
+                    }
+                }
+
+                .main-p2 {
+                    font-family: $mainFont;
+                    font-size: 12px;
+                    color: $mainPFont;
+                    font-weight: $reg;
+                    letter-spacing: 0px;
+                    line-height: 20px;
+                    max-width: 85%;
+                    margin-left: 59px;
+                    //border: $buildBorder;
+
+                    @include laptop {
+                        font-size: 12px;
+                    }
+
+                    @include largeTablet {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @include largeMobile {
+                        margin: $centerContainer;
+                        min-width: 100%;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+
+                    @include large {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//review section------------------------------------------------
+.review-section {
+    padding: 0 0 120px 0;
+
+    @include largeMobile {
+        padding: 0 0 50px 0
+    }
+
+    .main-container {
+        @include mainContainer2;
+        text-align: center;
+
+        @include largeMobile {
+            @include mobileContainer;
+            max-width: 85%;
+        }
+
+        .main-h2 {
+            font-family: $mainFont;
+            font-size: 28px;
+            color: $navFont;
+            letter-spacing: -1px;
+            //border: $buildBorder;
+
+            @include largeTablet {
+                font-size: 25px;
+            }
+
+            @include largeMobile {
+                font-size: 30px;
+            }
+
+            @include large {
+                font-size: 35px;
+                letter-spacing: -1.5px;
+            }
+        }
+    }
+
+    .main-container {
+        @include mainContainer2;
+
+        @include largeMobile {
+            @include mobileContainer; // this is a prick!! wont work!
+            max-width: 85%; // this does work!
+        }
+
+        .row {
+
+            .col3 {
+                &.review {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    @media (min-width: 576px) {
+                        display: block !important;
+                    }
+                }
+            
+                .review-img {
+                    width: 16%;
+                    max-width: 16%;
+                    margin-bottom: 20px;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        min-width: 23%; 
+                        margin-top: 28px;
+                    }
+                }
+
+                .main-h5 {
+                    font-family: $mainFont;
+                    font-size: 12px;
+                    color: $navFont;
+                    font-weight: $boldest;
+                    letter-spacing: -0.5px;
+                    max-width: 50%;
+                    margin: $centerContainer;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        font-size: 15px;
+                    }
+                }
+
+                .main-p2 {
+                    font-family: $mainFont;
+                    font-size: 12px;
+                    color: $mainPFont;
+                    font-weight: $reg;
+                    letter-spacing: 0px;
+                    line-height: 20px;
+                    max-width: 100%;
+                    //border: $buildBorder;
+
+                    @include laptop {
+                        font-size: 12px;
+                    }
+
+                    @include largeTablet {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @include largeMobile {
+                        margin: $centerContainer;
+                        padding: 15px 10px 0 10px;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+
+                    @include large {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            //other reviews hidden for mobile----
+            .anita, .ali, .richard {
+                    
+                @include largeMobile {
+                    display: $getRid;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-container {
+        @include mainContainer2;
+
+        @include largeMobile {
+            @include mobileContainer2;
+        }
+
+        .circle-toggle-div {
+            display: $getRid;
+
+            @include largeMobile {
+                display: flex;
+                justify-content: space-between;
+                width: 40px;
+                margin: $centerContainer;
+                padding-top: 50px;
+                //border: $buildBorder;
+            }
+
+            .circle-toggle {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                border: 1.5px solid $mainBtnColor;
+                padding: 0;
+
+                &:hover, &.active { 
+                    background-color: $mainBtnColor; 
+                }
+            }
+        }
+
+        .nav-button {
+            display: inline-block;
+            font-family: $mainFont;
+            font-size: 12px;
+            color: $footerFont;
+            font-weight: $extraBold;
+            text-decoration: $getRid;
+            background-color: $mainBtnColor;
+            padding: 14px 28px 14px 28px;
+            border-radius: 20px;
+            box-shadow: 0 12px 5px -1px rgba(236, 99, 25, 0.301);
+            margin-top: 45px;
+
+            &:hover {
+                color: $mainPFont;
+            }
+        }
+    }
+}
+
+//Orange section----------------------------------------------------
+.orange-section {
+    background-color: $mainBtnColor;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-attachment: scroll;
+    background-position: -363% 80%; 
+    padding: 30px 0 30px 0;
+
+    @include largeMobile {
+        padding: 80px 0 80px 0;
+        text-align: center;
+        background-position: 170% -170%;
+    }
+
+    @include large {
+        background-position: -550% 100%;
+    }
+
+    .main-container {
+        @include mainContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .row {
+
+            .col {
+
+                .main-h2 {
+                    font-family: $mainFont;
+                    font-size: 28px;
+                    font-weight: $extraBold;
+                    color: $footerFont;
+                    letter-spacing: -1px;
+                    max-width: 80%; 
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        min-width: 100%;
+                        font-size: 38px;
+                        margin: 0;
+                    }
+
+                    @include large {
+                        font-size: 38px;
+                        letter-spacing: -1.5px;
+                    }
+                }
+            }
+
+            .col {
+
+                .button-div {
+                    width: 100%;
+                    @include flexJustRight;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        display: inline-block;
+                        margin-top: 22px;
+                    }
+
+                    .nav-button {
+                        display: inline-block;
+                        font-family: $mainFont;
+                        font-size: 12px;
+                        color: $mainBtnColor;
+                        font-weight: $extraBold;
+                        text-decoration: $getRid;
+                        background-color: $footerFont;
+                        padding: 14px 28px 14px 28px;
+                        border-radius: 20px;
+                        box-shadow: 0 12px 5px -1px rgba(236, 99, 25, 0.301);
+                        margin-top: 35px;
+
+                        @include largeMobile {
+                            margin-top: 0;
+                        }
+
+                        @include large {
+                            margin-top: 55px;
+                        }
+    
+                        &:hover {
+                            background-color: $mainBtnColor;
+                            border: 1px solid $footerFont;
+                            color: $footerFont;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

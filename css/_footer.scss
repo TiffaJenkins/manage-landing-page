@@ -1,0 +1,369 @@
+.main-footer {
+    background-color: $footerBg;
+    padding: 60px 0 60px 0;
+
+    @include largeMobile {
+        padding: 50px 0 35px 0;
+    }
+
+    .main-container {
+        @include mainContainer;
+
+        @include largeMobile {
+            @include mobileContainer;
+        }
+
+        .row {
+
+            @include largeMobile {
+                @include flexColReverse;
+            }
+            
+            .col4 {
+                
+                @include largeMobile {
+                    @include flexColReverse;
+                }
+
+                .manage-footer-logo {
+                    padding-bottom: 60px;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        margin: $centerContainer;
+                        width: 55%;
+                        padding-bottom: 0;
+                    }
+                }
+
+                .icon-div {
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        width: 100%;
+                        @include flexSpaceBetween;
+                        margin-top: 10px;
+                        margin-bottom: 40px;
+                    }
+
+                    .footer-icon {
+                        margin-right: 8px;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        //border: $buildBorder;
+
+                        &:hover {
+                            background-color: $mainBtnColor;
+                        }
+
+                        @include tablet {
+                            width: 12%;
+                        }
+
+                        @include largeMobile {
+                            margin-right: 0;
+                            min-width: 11.5%; 
+                        }
+                    }
+                }
+
+                //mobile copyright----
+                .footer-p2 {
+                    display: $getRid;
+
+                    @include largeMobile {
+                        display: block;
+                        text-align: center;
+                        font-family: $mainFont;
+                        font-size: 12px;
+                        font-weight: $reg;
+                        color: $mainPFont;
+                        margin-top: 50px;
+                        margin-bottom: 0;
+                        //border: $buildBorder; 
+                    }
+                }
+            }
+
+            .col4-2 {
+
+                @include largeMobile {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .footer-ul {
+                    height: 100%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    list-style: $getRid;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        padding: 0 30px 0 0;
+                    }
+                    
+                    li {
+
+                        @include largeMobile {
+                            margin-bottom: 20px;
+                        }
+
+                        .footer-link {
+                            font-family: $mainFont;
+                            font-size: 10px;
+                            font-weight: $reg;
+                            color: $footerFont;
+                            text-decoration: $getRid;
+                            //border: $buildBorder;
+
+                            @include largeMobile {
+                                font-size: 14px;
+                            }
+
+                            @include fold {
+                                font-size: 12px;
+                            }
+
+                            @include large {
+                                font-size: 12px;
+                            }
+
+                            &:hover {
+                                color: $mainBtnColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col4-2 {
+
+                @include largeMobile {
+                    display: flex;
+                    justify-content: center;
+                }
+        
+                .footer-ul2 {
+                    height: 70%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    list-style: $getRid;
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        padding: 0;
+                    }
+                    
+                    li {
+
+                        @include largeMobile {
+                            margin-bottom: 20px;
+                        }
+
+                        .footer-link {
+                            font-family: $mainFont;
+                            font-size: 10px;
+                            font-weight: $reg;
+                            color: $footerFont;
+                            text-decoration: $getRid;
+                            //border: $buildBorder;
+
+                            @include largeMobile {
+                                font-size: 14px;
+                            }
+
+                            @include fold {
+                                font-size: 12px;
+                            }
+
+                            @include large {
+                                font-size: 12px;
+                            }
+
+                            &:hover {
+                                color: $mainBtnColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col4 {
+
+                form {
+                    //border: $buildBorder;
+
+                    @include largeMobile {
+                        margin-bottom: 50px;
+                    }
+
+                    .form-div {
+                        //border: $buildBorder;
+
+                        input {
+                            display: inline-block;
+                            width: 75%;
+                            border-radius: 20px;
+                            padding: 9px 0 9px 10px;
+                            font-size: 9px;
+
+                            //red border for validation----
+                            &.error {
+                                border: 1.5px solid red;
+                            }
+
+                            @include largeTablet {
+                                width: 72%;
+                            }
+
+                            @include tablet {
+                                font-size: 8px;
+                            }
+
+                            @include largeMobile {
+                                padding: 14px 0 14px 20px;
+                                border-radius: 25px;
+                                font-size: 14px;
+                            }
+
+                            @include fold {
+                                padding: 12px 0 12px 10px;
+                                width: 70%;
+                                font-size: 10px;
+                            }
+
+                            @include large {
+                                padding: 14px 0 14px 12px;
+                                font-size: 12px;
+                                margin-right: 2px;
+                            }
+
+                            &::placeholder {
+                                color: $mainPFont;
+
+                                @include large {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .error-box {
+                            display: $getRid;
+                            position: absolute;
+                            margin-left: 11px;
+                            //border: $buildBorder;
+
+                            @include largeMobile {
+                                margin-left: 20px;
+                            }
+
+                            @include large {
+                                margin-left: 12px;
+                            }
+
+                            &.show {
+                                display: block;
+                            }
+
+                            .error-p {
+                                font-family: $mainFont;
+                                font-size: 7px;
+                                font-weight: $reg;
+                                font-style: italic;
+                                color: $mainBtnColor;
+                                margin-top: 4px;
+
+                                @include tablet {
+                                    font-size: 6px;
+                                }
+
+                                @include largeMobile {
+                                    font-size: 10px;
+                                }
+
+                                @include large {
+                                    font-size: 10px;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-button {
+                        display: inline-block;
+                        font-family: $mainFont;
+                        font-size: 10px;
+                        font-weight: $reg;
+                        color: $footerFont;
+                        background-color: $mainBtnColor;
+                        border-radius: 15px;
+                        outline: $getRid;
+                        border: $getRid;
+                        padding: 9px 14px 9px 14px;
+
+                        @include tablet {
+                            padding: 9px 10px 9px 10px;
+                            font-size: 8px;
+                        }
+
+                        @include largeMobile {
+                            padding: 14px 28px 14px 28px;
+                            border-radius: 25px;
+                            font-size: 11px;
+                            font-weight: $bold;
+                        }
+
+                        @include fold {
+                            padding: 12px 24px 12px 24px;
+                            font-size: 9px;
+                        }
+
+                        @include large {
+                            font-size: 12px;
+                            border-radius: 20px;
+                            padding: 14px 20px 14px 20px;
+                        }
+                    }
+                }
+
+                //desktop copyright----
+                .footer-p {
+                    font-family: $mainFont;
+                    font-size: 8px;
+                    font-weight: $reg;
+                    color: $mainPFont;
+                    margin-top: 60px;
+                    margin-left: 30%;
+                    max-width: 140px;
+                    //border: $buildBorder; 
+
+                    @include largeTablet {
+                        font-size: 7px;
+                        margin-top: 40px;
+                    }
+
+                    @include tablet {
+                        font-size: 6px;
+                        margin-top: 50px;
+                    }
+
+                    @include largeMobile {
+                        display: $getRid;
+                    }
+
+                    @include large {
+                        font-size: 10px;
+                        max-width: 180px;
+                        margin-top: 50px;
+                        margin-left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
